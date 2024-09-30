@@ -24,4 +24,20 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .underline {
+    color: lime;           
+}
+
+.underline span {
+    color: lime;           
+}
 }
