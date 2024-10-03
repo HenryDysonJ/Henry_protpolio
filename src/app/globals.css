@@ -21,6 +21,14 @@ body {
 }
 
 @layer utilities {
+  .banner {
+    /* background: url('https://www.tuexperto.com/wp-content/uploads/2022/08/cursos-gratis-para-aprender-a-programar.jpg.webp'); */
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-position: 20% 40%;
+    background-size: contain;
+  }
+
   .text-balance {
     text-wrap: balance;
   }
@@ -33,11 +41,12 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-  .underline {
-    color: lime;           
-}
 
-.underline span {
-    color: lime;           
-}
+  .underline {
+    color: lime;
+  }
+
+  .underline span {
+    color: lime;
+  }
 }

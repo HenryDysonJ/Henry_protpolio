@@ -27,8 +27,9 @@ const CardList = ({ bgColor, title, icon, }: { bgColor: string, title: string, i
 
 const Skills = () => {
     return (
-        <div className='grid place-items-center h-1/2 px-24 bg-black'>
-            <div className='flex justify-between items-center flex-row flex-wrap gap-4 w-full'>
+        <div className='flex flex-col gap-5'>
+            <h3 className='text-[30px] font-semibold text-lime-400 text-left'>{'Skills'} <span className='text-white'>{'( )'}</span></h3>
+            <div className='flex justify-center items-center flex-row flex-wrap gap-6 max-lg:gap-10'>
                 <CardList icon={<HtmlIcon />} title={'HTML5'} bgColor="#E44D26" />
                 <CardList icon={<CssIcon />} title={'CSS'} bgColor="#264DE4" />
                 <CardList icon={<JsIcon />} title={'Javascript'} bgColor="#f7df1e" />

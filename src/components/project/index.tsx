@@ -11,7 +11,7 @@ const CardList = ({ title, icon }: { title: string, icon: React.ReactNode }) => 
 
 export const Projects = () => {
     return (
-        <div className='grid place-items-center h-96 px-20 bg-gradient-to-r from-black to-zinc-700'>
+        // <div className='grid place-items-center h-96 px-20 bg-gradient-to-r from-black to-zinc-700'>
             <div className='flex flex-row gap-4'>
                 <CardList icon={<>Hii</>} title='Henry' />
                 <CardList icon={<>Hii</>} title='Henry' />
@@ -19,6 +19,6 @@ export const Projects = () => {
                 <CardList icon={<>Hii</>} title='Henry' />
                 <CardList icon={<>Hii</>} title='Henry' />
             </div>
-        </div>
+        // </div>
     )
 }
