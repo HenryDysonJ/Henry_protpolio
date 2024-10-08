@@ -5,7 +5,6 @@ import React from 'react'
 
 function AboutMe() {
   return (
-    // <div className='grid place-items-center h-1/2 px-20 bg-gradient-to-r from-black to-zinc-700 max-sm:px-12'>
       <div className='flex justify-between items-center flex-row gap-12 w-full max-sm:flex-col'>
         <div className='grid place-items-normal gap-4 w-full'>
           <h3 className='text-[30px] font-semibold text-lime-400 text-left'>{'AboutMe'} <span className='text-white'>{'( )'}</span></h3>
@@ -37,7 +36,6 @@ function AboutMe() {
           </div>
         </div>
       </div>
-    // </div>
   )
 }
 
