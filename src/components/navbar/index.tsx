@@ -1,8 +1,8 @@
 'use client'
 
-import EmailIcon from "@/app/assets/email";
+import { EmailIcon } from "@/app/assets/email";
 import { GithubIcon } from "@/app/assets/github";
-import LinkedinIcon from "@/app/assets/linkedIn";
+import { LinkedinIcon } from "@/app/assets/linkedIn";
 import { SidebarDrawer } from "../drawer";
 import { useState } from "react";
 import ClosedIcon from "@/app/assets/closed";
@@ -26,11 +26,11 @@ export const TopNavBar = () => {
             <div className="flex justify-end items-center gap-8 max-lg:hidden">
                 <div className="flex justify-center items-center gap-2"><LinkedinIcon /><span className="text-[18px] font-medium cursor-pointer">Linkedin</span></div>
                 <div className="flex justify-center items-center gap-2"><GithubIcon /><span className="text-[18px] font-medium cursor-pointer">Github</span></div>
-                <div className="flex justify-center items-center p-1 rounded-lg bg-gradient-to-b from-lime-500 to-white">
+                <button className="flex justify-center items-center p-1 rounded-lg bg-gradient-to-b from-lime-500 to-white">
                     <div className="flex justify-center items-center gap-2 rounded-md bg-black px-3 py-2">
                         <EmailIcon /><span className="text-[18px] font-medium cursor-pointer">Conduct me</span>
                     </div>
-                </div>
+                </button>
             </div>
             <div className="hidden max-lg:block max-lg:flex max-lg:justify-end items-center" onClick={() => setOpen(!open)}>{!open ? <MenuIcon /> : <ClosedIcon />}</div>
             <SidebarDrawer isOpen={open} setIsOpen={() => setOpen(!open)} />

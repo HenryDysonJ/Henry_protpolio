@@ -24,11 +24,11 @@ export const Experience = () => {
                                 accessibility standards.
                             </p>
                             <a href='https://www.crayond.com' target='_blank'>
-                                <div className="flex justify-center items-center p-1 rounded-lg bg-gradient-to-b from-lime-500 to-white mt-2">
+                                <button className="flex justify-center items-center p-1 rounded-lg bg-gradient-to-b from-lime-500 to-white mt-2">
                                     <div className="flex justify-center items-center gap-2 rounded-md bg-black px-3 py-2">
                                         <p className="text-[18px] font-medium cursor-pointer">Go to website</p>
                                     </div>
-                                </div>
+                                </button>
                             </a>
                         </div>
                     </div>
@@ -61,11 +61,11 @@ export const Experience = () => {
                                 and JavaScript, ensuring cross-browser compatibility and mobile optimization.
                             </p>
                             <a href='https://dorustree.com' target='_blank'>
-                                <div className="flex justify-center items-center p-1 rounded-lg bg-gradient-to-b from-lime-500 to-white mt-2">
+                                <button className="flex justify-center items-center p-1 rounded-lg bg-gradient-to-b from-lime-500 to-white mt-2">
                                     <div className="flex justify-center items-center gap-2 rounded-md bg-black px-3 py-2">
                                         <p className="text-[18px] font-medium cursor-pointer">Go to website</p>
                                     </div>
-                                </div>
+                                </button>
                             </a>
                         </div>
                     </div>
@@ -86,11 +86,11 @@ export const Experience = () => {
                                 medical billing {'(payment posting)'}.
                             </p>
                             <a href='https://www.omegahms.com' target='_blank'>
-                                <div className="flex justify-center items-center p-1 rounded-lg bg-gradient-to-b from-lime-500 to-white mt-2">
+                                <button className="flex justify-center items-center p-1 rounded-lg bg-gradient-to-b from-lime-500 to-white mt-2">
                                     <div className="flex justify-center items-center gap-2 rounded-md bg-black px-3 py-2">
                                         <p className="text-[18px] font-medium cursor-pointer">Go to website</p>
                                     </div>
-                                </div>
+                                </button>
                             </a>
                         </div>
                     </div>

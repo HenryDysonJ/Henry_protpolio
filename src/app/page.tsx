@@ -13,7 +13,7 @@ export default function Home() {
         <div className="fixed z-10 w-full">
           <TopNavBar />
         </div>
-        <div className='flex justify-center items-center px-24 py-16 bg-gradient-to-r from-black to-zinc-700 max-lg:px-6 lg:h-[34%]'>
+        <div className='flex justify-center items-center px-24 py-16 bg-gradient-to-r from-black to-zinc-700 max-lg:px-6 lg:h-[26%]'>
           <ProfileInfo />
         </div>
 
@@ -33,7 +33,7 @@ export default function Home() {
           <Experience />
         </div>
 
-        <div className='flex justify-center items-center h-[20%] px-20 bg-gradient-to-r from-black to-zinc-600'>
+        <div className='flex justify-center items-center h-[16%] px-20 bg-gradient-to-r from-black to-zinc-600'>
           <ConductMe/>
         </div>
 
