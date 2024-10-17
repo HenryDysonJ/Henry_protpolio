@@ -25,7 +25,7 @@ function RightArrow() {
 					height='41'
 					x='46.5'
 					y='42.5'
-					stroke='#DBECFE'
+					stroke='#fff'
 					rx='20.5'
 					shapeRendering='crispEdges'
 					transform='rotate(-180 46.5 42.5)'
