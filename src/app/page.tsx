@@ -30,11 +30,11 @@ export default function Home() {
           <AboutMe />
         </div>
 
-        <div id="3" className='flex justify-center items-center px-20 py-16 bg-black max-lg:px-6'>
+        <div id="3" className='flex justify-center items-center px-20 py-12 bg-black max-lg:px-6'>
           <Skills />
         </div>
 
-        <div id="4" className='flex justify-start items-center h-96 px-20 bg-gradient-to-r from-black to-zinc-600 max-lg:px-6 max-lg:w-full'>
+        <div id="4" className='flex justify-start items-center h-[28rem] py-2 px-20 bg-gradient-to-r from-black to-zinc-600 max-lg:px-6 max-lg:w-full'>
           <Projects />
         </div>
 

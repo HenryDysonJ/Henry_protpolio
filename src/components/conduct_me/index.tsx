@@ -8,9 +8,18 @@ import { TagIcon } from '@/app/assets/tag'
 import { TwitterIcon } from '@/app/assets/twiter'
 import { UserIcon } from '@/app/assets/user'
 import { WhatsappIcon } from '@/app/assets/whatsapp'
-import React from 'react'
+import React, { useRef } from 'react'
 
 export const ConductMe = () => {
+
+    const formRef = useRef<HTMLFormElement | null>(null);
+    
+    const handleSubmit = () => {
+        if (formRef.current) {
+            formRef.current.reset();
+            console.log("Form has been reset!");
+        }
+    }
     return (
         <div className='flex justify-between items-center flex-row gap-12 w-full max-sm:flex-col'>
             <div className='grid place-items-normal gap-4 w-full'>
@@ -50,16 +59,16 @@ export const ConductMe = () => {
             <div className='grid place-items-normal w-full h-full'>
 
                 <div className='flex justify-between items-center flex-row gap-2 w-full h-full bg-stone-500 rounded-md px-4 py-4 shadow-lg'>
-                    <div className='flex justify-center items-start flex-col gap-y-4 w-full'>
-                        <input className='bg-white p-4 rounded-md w-full focus:outline-none focus:ring-0 text-stone-600 font-semibold' placeholder='Your name' />
-                        <input className='bg-white p-4 rounded-md w-full focus:outline-none focus:ring-0 text-stone-600 font-semibold' placeholder='Your Email' />
-                        <textarea className='bg-white p-4 rounded-md w-full focus:outline-none focus:ring-0 text-stone-600 font-semibold' placeholder='Message' rows={4} />
-                        <button className="flex justify-center items-center p-1 rounded-lg bg-gradient-to-b from-lime-500 to-white">
+                    <form ref={formRef} id="myForm" target='_blank' action={'https://docs.google.com/forms/u/0/d/e/1FAIpQLSe3W5SNp32guxT9OfTTZGqvlz69f9OtyI-j7mn6ZVDnx03gMg/formResponse'} method='post' className='flex justify-center items-start flex-col gap-y-4 w-full'>
+                        <input name='entry.2005620554' className='bg-white p-4 rounded-md w-full focus:outline-none focus:ring-0 text-stone-600 font-semibold' placeholder='Your name' />
+                        <input name='entry.1045781291' className='bg-white p-4 rounded-md w-full focus:outline-none focus:ring-0 text-stone-600 font-semibold' placeholder='Your Email' />
+                        <textarea name='entry.1065046570' className='bg-white p-4 rounded-md w-full focus:outline-none focus:ring-0 text-stone-600 font-semibold' placeholder='Message' rows={4} />
+                        <button onClick={() => handleSubmit()} type='submit' className="flex justify-center items-center p-1 rounded-lg bg-gradient-to-b from-lime-500 to-white">
                             <div className="flex justify-center items-center gap-2 rounded-md bg-black px-3 py-2">
-                                <p className="text-[18px] font-medium cursor-pointer">Go to website</p>
+                                <p className="text-[18px] font-medium cursor-pointer">Submit</p>
                             </div>
                         </button>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>

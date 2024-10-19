@@ -27,7 +27,7 @@ function AboutMe() {
           </div>
       
           <div className='flex justify-center items-center flex-row gap-2 w-full rounded-md px-4 py-4'>
-            <a href='/henry_2.png' download='Henry_resume' className="flex justify-center items-center p-1 rounded-lg bg-gradient-to-b from-lime-500 to-white">
+            <a href='/Henry_Dyson_J.pdf' download='Henry_resume' className="flex justify-center items-center p-1 rounded-lg bg-gradient-to-b from-lime-500 to-white">
               <div className="flex justify-center items-center gap-2 rounded-md bg-black px-3 py-2">
                 <DownloadIcon /> <span className="text-[18px] font-medium cursor-pointer">Resume CV</span>
               </div>
