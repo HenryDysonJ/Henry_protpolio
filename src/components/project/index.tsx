@@ -6,6 +6,11 @@ export const Projects = () => {
 
     const slideData = [
         {
+            title: "Responsive Static Page",
+            demoLink: 'https://famous-choux-726e9f.netlify.app',
+            logo: '/xacro.png'
+        },
+        {
             title: "React Crud Operation",
             description:"/react_crud.png",
             demoLink: 'https://lca-assismenet-ii-jzdp.vercel.app',
@@ -16,6 +21,12 @@ export const Projects = () => {
             demoLink: 'https://lca-assismenet-ii-jzdp.vercel.app',
             logo: '/nextjs_crudd.png'
         },
+        {
+            title: "NextJs Ecommerce App",
+            demoLink: 'https://sunny-rolypoly-d57275.netlify.app',
+            logo: '/e_commus.png'
+        },
+        
     ]
 
     return (
@@ -23,8 +34,8 @@ export const Projects = () => {
             <h3 className='text-[30px] font-semibold text-lime-400 text-left'>
                 {'My Works'} <span className='text-white'>{'( )'}</span>
             </h3>
-            <div className='relative flex flex-row justify-center gap-4 max-w-[88vw] overflow-hidden'>
-                <EmblaCarousel slides={slideData} options={{ loop: false }} />
+            <div className='relative grid place-items-center max-w-[100vw] overflow-hidden'>
+                <EmblaCarousel slides={slideData} options={{ loop: true }} />
             </div>
         </div>
 
