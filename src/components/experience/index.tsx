@@ -11,7 +11,7 @@ export const Experience = () => {
 
                 <div className='w-0.5 h-full bg-lime-500 absolute bottom-0 z-0'></div>
 
-                <div className='flex flex-row justify-center items-center gap-16 w-full'>
+                <div className='flex flex-row justify-center items-center gap-10 w-full'>
 
                     <div className='flex justify-between items-center flex-row gap-2 w-full bg-stone-500 rounded-md px-4 py-4 shadow-lg'>
                         <div className='flex items-start flex-col gap-2'>
@@ -41,7 +41,7 @@ export const Experience = () => {
 
                 </div>
 
-                <div className='flex flex-row justify-center items-center gap-16 w-full'>
+                <div className='flex flex-row justify-center items-center gap-10 w-full'>
 
 
                     <div className='flex justify-end items-center flex-row gap-2 w-full rounded-md px-4 py-4 shadow-lg'>
@@ -71,7 +71,7 @@ export const Experience = () => {
                     </div>
                 </div>
 
-                <div className='flex flex-row justify-center items-center gap-16 w-full'>
+                <div className='flex flex-row justify-center items-center gap-10 w-full'>
 
                     <div className='flex justify-between items-center flex-row gap-2 w-full bg-stone-500 rounded-md px-4 py-4 shadow-lg'>
                         <div className='flex items-start flex-col gap-2'>

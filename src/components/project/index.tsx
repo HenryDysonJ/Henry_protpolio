@@ -34,11 +34,9 @@ export const Projects = () => {
             <h3 className='text-[30px] font-semibold text-lime-400 text-left'>
                 {'My Works'} <span className='text-white'>{'( )'}</span>
             </h3>
-            <div className='relative grid place-items-center max-w-[100vw] overflow-hidden'>
+            <div className='relative grid place-items-center'>
                 <EmblaCarousel slides={slideData} options={{ loop: true }} />
             </div>
         </div>
-
-
     )
 }
