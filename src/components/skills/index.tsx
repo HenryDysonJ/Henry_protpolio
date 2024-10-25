@@ -35,17 +35,17 @@ const Skills = () => {
                 <CardList icon={<JsIcon />} title={'Javascript'} bgColor="#f7df1e" />
                 <CardList icon={<ReactJSIcon />} title={'React Js'} bgColor="#00d8ff" />
                 <CardList icon={<ReduxIcon />} title={'Redux'} bgColor="#764ABC" />
-                <CardList icon={<NextjsIcon />} title={'Next Js'} bgColor="#000" />
                 <CardList icon={<TypeScriptIcons />} title={'Typescript'} bgColor="#3178c6" />
+                <CardList icon={<NextjsIcon />} title={'Next Js'} bgColor="#000" />
                 <CardList icon={<BootstrapIcon />} title={'Bootstrap'} bgColor="#7c4dff" />
                 <CardList icon={<SassIcon />} title={'Sass'} bgColor="#f06292" />
                 <CardList icon={<MaterialUiIcon />} title={'MUI'} bgColor='#0288d1' />
                 <CardList icon={<TailwindIcon />} title={'Tailwind css'} bgColor="#009bb8" />
+                <CardList icon={<StyledComponents />} title={'Styled component'} bgColor={"#ffcebf"} />
                 <CardList icon={<StorybookIcon />} title={'Storybook'} bgColor="#ff4785" />
                 <CardList icon={<ZustandIcon />} title={'Zustand'} bgColor="#50273A" />
                 <CardList icon={<GithubLogo />} title={'GitHub'} bgColor="#000000" />
                 <CardList icon={<GitLabIcon />} title={'GitLab'} bgColor={"#ff7043"} />
-                <CardList icon={<StyledComponents />} title={'Styled component'} bgColor={"#ffcebf"} />
             </div>
         </div>
     )

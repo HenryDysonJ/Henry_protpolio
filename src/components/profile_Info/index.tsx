@@ -8,8 +8,7 @@ import { JavascriptIcon } from '@/app/assets/javascriptIcon'
 
 export const ProfileInfo = () => {
     return (
-        // <div className='grid place-items-center h-5/6 px-20 bg-gradient-to-r from-black to-zinc-700 max-sm:px-12'>
-            <div className='flex justify-between items-center flex-row gap-12 w-full overflow-hidden max-sm:flex-col max-sm:pt-20'>
+            <div className='flex justify-between items-center flex-row gap-12 w-full overflow-hidden max-sm:flex-col max-sm:pt-8'>
                 <div className='grid place-items-normal w-full'>
                     <h4 className='text-[24px] font-medium mb-2'>Hello, i am</h4>
                     <h1 className='text-[44px] font-bold text-lime-400 mb-4'>{'< Henry'}<br />{'Dyson J />'}</h1>
@@ -41,6 +40,5 @@ export const ProfileInfo = () => {
                     </div>
                 </div>
             </div>
-        // </div>
     )
 }

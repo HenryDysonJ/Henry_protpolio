@@ -5,8 +5,8 @@ import { EmailIcon } from "@/app/assets/email";
 import { GithubIcon } from "@/app/assets/github";
 import { LinkedinIcon } from "@/app/assets/linkedIn";
 import MenuIcon from "@/app/assets/menu";
-import { useState } from "react";
-import { SidebarDrawer } from "../drawer";
+// import { useState } from "react";
+// import { SidebarDrawer } from "../drawer";
 
 interface TopNavBarPro {
     handleClickAbout: (id: string) => void
@@ -14,11 +14,13 @@ interface TopNavBarPro {
     handleClickProjects: (id: string) => void
     handleClickHome: (id: string) => void
     handleClickConduct: (id: string) => void
+    handleOpen: () => void
+    open: boolean
 }
 export const TopNavBar = (props: TopNavBarPro) => {
-    const { handleClickHome, handleClickAbout, handleClickProjects, handleClickSkills ,handleClickConduct } = props;
+    const { handleClickHome, handleClickAbout, handleClickProjects, handleClickSkills, handleClickConduct, handleOpen, open } = props;
 
-    const [open, setOpen] = useState(false)
+    // const [open, setOpen] = useState(false)
     return (
         <div className="nav grid grid-cols-3 gap-4 py-4 px-20 bg-gradient-to-r from-black to-zinc-800 border-b border-b-slate-800 max-lg:grid-cols-2 max-lg:px-6">
             <a onClick={() => handleClickHome('1')} className="" href="#">
@@ -41,8 +43,8 @@ export const TopNavBar = (props: TopNavBarPro) => {
                     </div>
                 </button>
             </div>
-            <div className="hidden max-lg:block max-lg:flex max-lg:justify-end items-center" onClick={() => setOpen(!open)}>{!open ? <MenuIcon /> : <ClosedIcon />}</div>
-            <SidebarDrawer isOpen={open} setIsOpen={() => setOpen(!open)} />
+            <div className="hidden max-lg:block max-lg:flex max-lg:justify-end items-center" onClick={() => handleOpen()}>{!open ? <MenuIcon /> : <ClosedIcon />}</div>
+            {/* <SidebarDrawer isOpen={open} setIsOpen={() => setOpen(!open)} /> */}
         </div>
     );
 }

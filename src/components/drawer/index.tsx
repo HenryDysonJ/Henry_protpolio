@@ -7,12 +7,18 @@ import Image from 'next/image'
 interface DrawerProp {
 	isOpen: boolean;
 	setIsOpen: () => void;
+	handleClickAbout: (id: string) => void
+	handleClickSkills: (id: string) => void
+	handleClickProjects: (id: string) => void
+	handleClickHome: (id: string) => void
+	handleClickExperiance: (id: string) => void
+	handleClickConduct: (id: string) => void
 }
 
 export const SidebarDrawer = (props: DrawerProp) => {
-	const { isOpen, setIsOpen } = props;
+	const { isOpen, setIsOpen ,handleClickHome, handleClickAbout, handleClickExperiance, handleClickProjects, handleClickSkills, handleClickConduct } = props;
 	return (
-		<div className={`absolute top-0 left-0 z-10 flex justify-between flex-col bg-zinc-800 w-72 h-screen transition-transform duration-300 ${isOpen ? 'translate-x-0 shadow-lg' : '-translate-x-72'}`}>
+		<div className={`absolute top-0 left-0 z-10 flex justify-between flex-col bg-zinc-800 w-72 h-full transition-transform duration-300 ${isOpen ? 'translate-x-0 shadow-lg' : '-translate-x-72'}`}>
 			<div className='flex justify-between p-4 h-1/3 border-b border-lime-500 banner'>
 				<div className=''>
 					<Image
@@ -33,11 +39,12 @@ export const SidebarDrawer = (props: DrawerProp) => {
 				</Button>
 			</div>
 			<div className='px-4 py-2 h-full flex flex-col'>
-				<a className='py-2 hover:text-lime-300'>Home</a>
-				<a className='py-2 hover:text-lime-300'>About me</a>
-				<a className='py-2 hover:text-lime-300'>Experience</a>
-				<a className='py-2 hover:text-lime-300'>Service</a>
-				<a className='py-2 hover:text-lime-300'>Conduct me</a>
+				<a onClick={() => handleClickHome('1')} className='py-2 hover:text-lime-300'>Home</a>
+				<a onClick={() => handleClickAbout('2')} className='py-2 hover:text-lime-300'>About me</a>
+				<a onClick={() => handleClickSkills('3')} className='py-2 hover:text-lime-300'>Skills</a>
+				<a onClick={() => handleClickProjects('4')} className='py-2 hover:text-lime-300'>My Works</a>
+				<a onClick={() => handleClickExperiance('5')} className='py-2 hover:text-lime-300'>Experiance</a>
+				<a onClick={() => handleClickConduct('6')} className='py-2 hover:text-lime-300'>Conduct me</a>
 			</div>
 			<div className='flex justify-between p-2 gap-4' ></div>
 		</div>

@@ -75,7 +75,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
             <div className="embla__slide" key={index}>
               <div className="embla__slide__number">
                 <CardList title={item?.title} link={item?.demoLink} logo={item?.logo} />
-              </div>
+              </div>  
             </div>
           ))}
         </div>
@@ -83,14 +83,14 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 
       <div className="embla__controls">
         <div className="embla__buttons">
-          <div className='absolute z-[111111] left-0 top-0 bottom-0 flex items-center'>
+          <div className='absolute  left-0 top-0 bottom-0 flex items-center'>
             <PrevButton
               onClick={() => onButtonAutoplayClick(onPrevButtonClick)}
               disabled={prevBtnDisabled}
             />
           </div>
 
-          <div className='absolute z-[111111] right-2 top-0 bottom-0 flex items-center'>
+          <div className='absolute right-2 top-0 bottom-0 flex items-center'>
             <NextButton
               onClick={() => onButtonAutoplayClick(onNextButtonClick)}
               disabled={nextBtnDisabled}

@@ -1,6 +1,5 @@
 import React from 'react'
 import EmblaCarousel from '../carosals'
-// import Lca from '/LCA_img.png'
 
 export const Projects = () => {
 

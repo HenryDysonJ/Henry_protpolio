@@ -1,14 +1,17 @@
 'use client'
 import AboutMe from "@/components/about_me";
 import { ConductMe } from "@/components/conduct_me";
+import { SidebarDrawer } from "@/components/drawer";
 import { Experience } from "@/components/experience";
 import { Footer } from "@/components/footer";
 import { TopNavBar } from "@/components/navbar";
 import { ProfileInfo } from "@/components/profile_Info";
 import { Projects } from "@/components/project";
 import Skills from "@/components/skills";
+import { useState } from "react";
 
 export default function Home() {
+  const [open, setOpen] = useState(false)
 
   const handleScroll = (id: string) => {
     const element = document.getElementById(`${id}`);
@@ -19,9 +22,11 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px justify-items-center min-h-screen gap-16 font-[family-name:var(--font-geist-sans)]">
       <main className="w-full h-full">
-        <div className="fixed z-10 w-full">
-          <TopNavBar handleClickHome={handleScroll} handleClickAbout={handleScroll} handleClickProjects={handleScroll} handleClickSkills={handleScroll} handleClickConduct={handleScroll} />
+        <div className="fixed z-20 w-full h-full">
+          <TopNavBar handleClickHome={handleScroll} handleClickAbout={handleScroll} handleClickProjects={handleScroll} handleClickSkills={handleScroll} handleClickConduct={handleScroll} handleOpen={() => setOpen(!open)} open={open} />
+          <SidebarDrawer isOpen={open} setIsOpen={() => setOpen(!open)} handleClickHome={handleScroll} handleClickAbout={handleScroll} handleClickProjects={handleScroll} handleClickSkills={handleScroll} handleClickConduct={handleScroll} handleClickExperiance={handleScroll}/>
         </div>
+        
         <div id="1" className='flex justify-center items-center px-24 py-16 bg-gradient-to-r from-black to-zinc-700 max-lg:px-6 lg:h-[22%]'>
           <ProfileInfo />
         </div>
