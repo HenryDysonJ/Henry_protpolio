@@ -3,7 +3,7 @@ import AboutMe from "@/components/about_me";
 import { ConductMe } from "@/components/conduct_me";
 import { SidebarDrawer } from "@/components/drawer";
 import { Experience } from "@/components/experience";
-import { Footer } from "@/components/footer";
+import { Footer } from "@/components/footer/footer";
 import { TopNavBar } from "@/components/navbar";
 import { ProfileInfo } from "@/components/profile_Info";
 import { Projects } from "@/components/project";
@@ -14,6 +14,7 @@ export default function Home() {
   const [open, setOpen] = useState(false)
 
   const handleScroll = (id: string) => {
+    console.log(id, "id");
     const element = document.getElementById(`${id}`);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
@@ -21,13 +22,13 @@ export default function Home() {
   }
   return (
     <div className="grid grid-rows-[20px_1fr_20px justify-items-center min-h-screen gap-16 font-[family-name:var(--font-geist-sans)]">
-      <main className="w-full h-full">
-        <div className="fixed z-20 w-full h-full">
+      <main className="relative w-full h-full">
+        <SidebarDrawer isOpen={open} setIsOpen={() => setOpen(!open)} handleClickHome={handleScroll} handleClickAbout={handleScroll} handleClickProjects={handleScroll} handleClickSkills={handleScroll} handleClickConduct={handleScroll} handleClickExperiance={handleScroll} />
+        <div className="fixed w-full z-[10]">
           <TopNavBar handleClickHome={handleScroll} handleClickAbout={handleScroll} handleClickProjects={handleScroll} handleClickSkills={handleScroll} handleClickConduct={handleScroll} handleOpen={() => setOpen(!open)} open={open} />
-          <SidebarDrawer isOpen={open} setIsOpen={() => setOpen(!open)} handleClickHome={handleScroll} handleClickAbout={handleScroll} handleClickProjects={handleScroll} handleClickSkills={handleScroll} handleClickConduct={handleScroll} handleClickExperiance={handleScroll}/>
         </div>
-        
-        <div id="1" className='flex justify-center items-center px-24 py-16 bg-gradient-to-r from-black to-zinc-700 max-lg:px-6 lg:h-[22%]'>
+
+        <div id="1" className='flex justify-center items-center px-24 py-14 bg-gradient-to-r from-black to-zinc-700 max-lg:px-6 lg:h-[22%]'>
           <ProfileInfo />
         </div>
 
@@ -47,7 +48,7 @@ export default function Home() {
           <Experience />
         </div>
 
-        <div id="6" className='flex justify-center items-center h-[16%] px-20 bg-gradient-to-r from-black to-zinc-600'>
+        <div id="6" className='flex justify-center items-center h-[16%] max-md:px-6 md:px-14 lg:px-20 bg-gradient-to-r from-black to-zinc-600'>
           <ConductMe />
         </div>
 

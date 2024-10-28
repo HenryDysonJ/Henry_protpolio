@@ -33,7 +33,7 @@ export const Experience = () => {
                         </div>
                     </div>
 
-                    <div className='h-6 w-12 rounded-full border-2 border-lime-500 bg-black z-10'></div>
+                    <div className='h-6 w-12 rounded-full border-2 border-lime-500 bg-black z-[6]'></div>
 
                     <div className='flex justify-start items-center flex-row gap-2 w-full rounded-md px-4 py-4 shadow-lg'>
                         <h3 className="text-[18px] text-lime-500 font-semibold">Sep 2022 - Present</h3>
@@ -48,7 +48,7 @@ export const Experience = () => {
                         <h3 className="text-[18px] text-lime-500 font-semibold cursor-pointer">Mar 2022 - Aug 2022</h3>
                     </div>
 
-                    <div className='h-6 w-12 rounded-full border-2 border-lime-500 bg-black z-10'></div>
+                    <div className='h-6 w-12 rounded-full border-2 border-lime-500 bg-black z-[6]'></div>
 
                     <div className='flex justify-between items-center flex-row gap-2 w-full bg-stone-500 rounded-md px-4 py-4 shadow-lg'>
                         <div className='flex items-start flex-col gap-2'>
@@ -95,7 +95,7 @@ export const Experience = () => {
                         </div>
                     </div>
 
-                    <div className='h-6 w-12 rounded-full border-2 border-lime-500 bg-black z-10'></div>
+                    <div className='h-6 w-12 rounded-full border-2 border-lime-500 bg-black z-[6]'></div>
 
                     <div className='flex justify-start items-center flex-row gap-2 w-full rounded-md px-4 py-4 shadow-lg'>
                         <h3 className="text-[18px] text-lime-500 font-semibold cursor-pointer">Jul 2021 - Feb 2022</h3>
