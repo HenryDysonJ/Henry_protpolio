@@ -7,7 +7,7 @@ function AboutMe() {
     <div className='flex justify-between items-center flex-row gap-12 w-full max-sm:flex-col'>
 
       <div className='grid place-items-normal gap-4 w-full'>
-        <h3 className='text-[30px] font-semibold text-lime-400 text-left'>{'AboutMe'} <span className='text-white'>{'( )'}</span></h3>
+        <h3 className='text-[30px] font-semibold text-lime-400 text-left'>{'AboutMe'}</h3>
         <p>
           Hi there! I’m Henry, a front-end developer with two years of experience specializing in creating dynamic and engaging web applications.
           My expertise lies in HTML, CSS, and JavaScript, with experience in frameworks like ReactJs.

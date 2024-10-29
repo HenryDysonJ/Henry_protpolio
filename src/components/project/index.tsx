@@ -11,7 +11,7 @@ export const Projects = () => {
         },
         {
             title: "React Crud Operation",
-            description:"/react_crud.png",
+            description: "/react_crud.png",
             demoLink: 'https://lca-assismenet-ii-jzdp.vercel.app',
             logo: "/react_crudd.png"
         },
@@ -25,14 +25,12 @@ export const Projects = () => {
             demoLink: 'https://sunny-rolypoly-d57275.netlify.app',
             logo: '/e_commus.png'
         },
-        
+
     ]
 
     return (
         <div className='flex flex-col gap-5 w-full'>
-            <h3 className='text-[30px] font-semibold text-lime-400 text-left'>
-                {'My Works'} <span className='text-white'>{'( )'}</span>
-            </h3>
+            <h3 className='text-[30px] font-semibold text-lime-400 text-left'>{'My Works'}</h3>
             <div className='relative grid place-items-center'>
                 <EmblaCarousel slides={slideData} options={{ loop: true }} />
             </div>

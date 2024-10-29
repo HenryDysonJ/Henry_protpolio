@@ -3,9 +3,7 @@ import React from 'react'
 export const Experience = () => {
     return (
         <div className='flex flex-col gap-y-5 w-full'>
-            <h3 className='text-[30px] font-semibold text-lime-400 text-left'>
-                {'Experience'} <span className='text-white'>{'( )'}</span>
-            </h3>
+            <h3 className='text-[30px] font-semibold text-lime-400 text-left'>{'Experience'}</h3>
 
             <div className='flex flex-col justify-center items-center gap-10 relative w-full'>
 

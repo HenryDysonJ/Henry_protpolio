@@ -7,7 +7,7 @@ const ProfileIcon = () => (
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
-    >
+        className="max-sm:h-[400px] max-sm:w-[400px]">
         <g filter="url(#filter0_d_207_890)">
             <circle cx={299} cy={294} r={263} fill="#2D2D2D" />
         </g>
