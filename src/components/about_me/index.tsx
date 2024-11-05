@@ -8,7 +8,7 @@ function AboutMe() {
 
       <div className='grid place-items-normal gap-4 w-full'>
         <h3 className='text-[30px] font-semibold text-lime-400 text-left'>{'AboutMe'}</h3>
-        <p>
+        <p className='text-white text-md font-normal'>
           Hi there! I’m Henry, a front-end developer with two years of experience specializing in creating dynamic and engaging web applications.
           My expertise lies in HTML, CSS, and JavaScript, with experience in frameworks like ReactJs.
 
@@ -23,9 +23,9 @@ function AboutMe() {
         <div className='flex items-start flex-col gap-4 px-10 w-full max-sm:px-0'>
           <div className='flex justify-between items-center flex-row gap-2 w-full bg-stone-500 rounded-md px-4 py-4 shadow-lg'>
             <div className='flex items-start flex-col gap-2'>
-              <span className="text-[16px] font-medium cursor-pointer">{'Front end developer'}</span>
+              <span className="text-[16px] font-medium text-white cursor-pointer">{'Front end developer'}</span>
               <a className="underline" href="#">
-                <span className="text-[14px] font-medium cursor-pointer">{'Projects'}</span>
+                <span className="text-[14px] text-lime-500 font-medium cursor-pointer">{'Projects'}</span>
               </a>
             </div>
             <span className="cursor-pointer"><FragmentIcon /></span>

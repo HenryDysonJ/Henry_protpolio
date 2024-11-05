@@ -25,13 +25,13 @@ export const TopNavBar = (props: TopNavBarPro) => {
         <div className="nav grid grid-cols-3 gap-4 py-4 px-20 bg-gradient-to-r from-black to-zinc-800 border-b border-b-slate-800 max-lg:grid-cols-2 max-lg:px-6">
             <a onClick={() => handleClickHome('1')} className="w-max" href="#">
                 <span className="text-gray-400 text-4xl max-lg:text-2xl font-bold cursor-pointer">Henry</span>
-                <span className="text-4xl font-bold max-lg:text-2xl cursor-pointer"> Dyson J</span>
+                <span className="text-4xl font-bold text-white max-lg:text-2xl cursor-pointer"> Dyson J</span>
             </a>
 
             <div className="flex justify-center items-center gap-8 max-lg:hidden">
-                <a onClick={() => handleClickAbout('2')} className="text-[18px] font-medium cursor-pointer">About</a>
-                <a onClick={() => handleClickSkills('3')} className="text-[18px] font-medium cursor-pointer">Skill</a>
-                <a onClick={() => handleClickProjects('4')} className="text-[18px] font-medium cursor-pointer">Projects</a>
+                <a onClick={() => handleClickAbout('2')} className="text-[18px] text-white font-medium cursor-pointer">About</a>
+                <a onClick={() => handleClickSkills('3')} className="text-[18px] text-white font-medium cursor-pointer">Skill</a>
+                <a onClick={() => handleClickProjects('4')} className="text-[18px] text-white font-medium cursor-pointer">Projects</a>
             </div>
 
             <div className="flex justify-end items-center gap-8 max-lg:hidden">
@@ -39,7 +39,7 @@ export const TopNavBar = (props: TopNavBarPro) => {
                 <a href="https://github.com/HenryDysonJ" target="_blank" className="flex justify-center items-center gap-2"><GithubIcon /><span className="text-[18px] font-medium cursor-pointer">Github</span></a>
                 <button onClick={() => handleClickConduct('6')} className="flex justify-center items-center p-1 rounded-lg bg-gradient-to-b from-lime-500 to-white">
                     <div className="flex justify-center items-center gap-2 rounded-md bg-black w-max px-3 py-2">
-                        <EmailIcon /><span className="text-[18px] font-medium cursor-pointer">Conduct me</span>
+                        <EmailIcon /><span className="text-[18px] text-white font-medium cursor-pointer">Conduct me</span>
                     </div>
                 </button>
             </div>
