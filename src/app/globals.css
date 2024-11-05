@@ -104,4 +104,33 @@ body {
     display: flex;
     justify-content: center;
   }
+
+  @media only screen and (max-width: 640px) {
+    .my_profile_Root {
+      height: 290px;
+      width: 290px;
+    }
+
+    .my_profile_img {
+      height: 180px;
+      width: 180px;
+      top: 36px;
+      left: 46px;
+    }
+
+    .react_icon {
+      height: 60px;
+      width: 60px;
+    }
+
+    .type_icon {
+      height: 28px;
+      width: 28px;
+    }
+
+    .js_icon {
+      height: 28px;
+      width: 28px;
+    }
+  }
 }

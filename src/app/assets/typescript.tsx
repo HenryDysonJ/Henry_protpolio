@@ -7,6 +7,7 @@ export const TypeScriptIcon = () => (
     viewBox="0 0 512 512"
     height={46}
     width={46}
+    className="type_icon"
   >
     <rect width={512} height={512} rx="15%" fill="#3178c6" />
     <path

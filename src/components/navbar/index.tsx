@@ -23,7 +23,7 @@ export const TopNavBar = (props: TopNavBarPro) => {
     // const [open, setOpen] = useState(false)
     return (
         <div className="nav grid grid-cols-3 gap-4 py-4 px-20 bg-gradient-to-r from-black to-zinc-800 border-b border-b-slate-800 max-lg:grid-cols-2 max-lg:px-6">
-            <a onClick={() => handleClickHome('1')} className="" href="#">
+            <a onClick={() => handleClickHome('1')} className="w-max" href="#">
                 <span className="text-gray-400 text-4xl max-lg:text-2xl font-bold cursor-pointer">Henry</span>
                 <span className="text-4xl font-bold max-lg:text-2xl cursor-pointer"> Dyson J</span>
             </a>
@@ -38,7 +38,7 @@ export const TopNavBar = (props: TopNavBarPro) => {
                 <a href="https://www.linkedin.com/in/henry-dyson-j-91b75519a" target="_blank" className="flex justify-center items-center gap-2"><LinkedinIcon /><span className="text-[18px] font-medium cursor-pointer">Linkedin</span></a>
                 <a href="https://github.com/HenryDysonJ" target="_blank" className="flex justify-center items-center gap-2"><GithubIcon /><span className="text-[18px] font-medium cursor-pointer">Github</span></a>
                 <button onClick={() => handleClickConduct('6')} className="flex justify-center items-center p-1 rounded-lg bg-gradient-to-b from-lime-500 to-white">
-                    <div className="flex justify-center items-center gap-2 rounded-md bg-black px-3 py-2">
+                    <div className="flex justify-center items-center gap-2 rounded-md bg-black w-max px-3 py-2">
                         <EmailIcon /><span className="text-[18px] font-medium cursor-pointer">Conduct me</span>
                     </div>
                 </button>
