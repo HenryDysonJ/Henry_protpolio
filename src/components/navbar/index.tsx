@@ -23,7 +23,7 @@ export const TopNavBar = (props: TopNavBarPro) => {
     // const [open, setOpen] = useState(false)
     return (
         <div className="nav grid grid-cols-3 gap-4 py-4 px-20 bg-gradient-to-r from-black to-zinc-800 border-b border-b-slate-800 max-lg:grid-cols-2 max-lg:px-6">
-            <a onClick={() => handleClickHome('1')} className="w-max" href="#">
+            <a onClick={() => handleClickHome('1')} className="w-max text-center" href="#">
                 <span className="text-gray-400 text-4xl max-lg:text-2xl font-bold cursor-pointer">Henry</span>
                 <span className="text-4xl font-bold text-white max-lg:text-2xl cursor-pointer"> Dyson J</span>
             </a>
