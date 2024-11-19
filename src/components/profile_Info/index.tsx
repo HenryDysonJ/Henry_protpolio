@@ -15,7 +15,7 @@ export const ProfileInfo = () => {
                 <h3 className='text-2xl font-semibold text-white mb-4'>FRONT END DEVELOPER</h3>
                 <div className='flex flex-wrap items-center flex-row gap-12 max-sm:gap-8 w-full'>
                     <div className='flex items-center flex-row gap-2'>
-                        <span className="text-5xl font-medium text-gray-400 cursor-pointer">2</span>
+                        <span className="text-5xl font-medium text-gray-400 cursor-pointer">3+</span>
                         <span className="text-sm font-medium text-gray-400  cursor-pointer">{'YEARS OF'}<br />{'EXPERIENCE'}</span>
                     </div>
                     <div className='flex items-center flex-row gap-2'>

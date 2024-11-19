@@ -37,6 +37,7 @@ const Skills = () => {
                 <CardList icon={<ReduxIcon />} title={'Redux'} bgColor="#764ABC" />
                 <CardList icon={<TypeScriptIcons />} title={'Typescript'} bgColor="#3178c6" />
                 <CardList icon={<NextjsIcon />} title={'Next Js'} bgColor="#000" />
+                <CardList icon={<ReactJSIcon color='#0da8d3'/>} title={'React Native'} bgColor="#0da8d3" />
                 <CardList icon={<BootstrapIcon />} title={'Bootstrap'} bgColor="#7c4dff" />
                 <CardList icon={<SassIcon />} title={'Sass'} bgColor="#f06292" />
                 <CardList icon={<MaterialUiIcon />} title={'MUI'} bgColor='#0288d1' />
