@@ -24,8 +24,8 @@ function AboutMe() {
           <div className='flex justify-between items-center flex-row gap-2 w-full bg-stone-500 rounded-md px-4 py-4 shadow-lg'>
             <div className='flex items-start flex-col gap-2'>
               <span className="text-[16px] font-medium text-white cursor-pointer">{'Front end developer'}</span>
-              <a className="underline" href="#">
-                <span className="text-[14px] text-lime-500 font-medium cursor-pointer">{'Projects'}</span>
+              <a className="underline">
+                <span className="text-[14px] text-lime-500 font-medium cursor-pointer">Projects</span>
               </a>
             </div>
             <span className="cursor-pointer"><FragmentIcon /></span>
