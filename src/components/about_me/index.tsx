@@ -9,7 +9,7 @@ function AboutMe() {
       <div className='grid place-items-normal gap-4 w-full'>
         <h3 className='text-[30px] font-semibold text-lime-400 text-left'>{'AboutMe'}</h3>
         <p className='text-white text-md font-normal'>
-          Hi there! I’m Henry, a front-end developer with two years of experience specializing in creating dynamic and engaging web applications.
+          Hi there! I’m Henry, a front-end developer with experienced specializing in creating dynamic and engaging web applications.
           My expertise lies in HTML, CSS, and JavaScript, with experience in frameworks like ReactJs.
 
           I’ve worked on a variety of projects, where I focused on enhancing user experience and improving load times.

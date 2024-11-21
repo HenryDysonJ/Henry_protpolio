@@ -5,9 +5,26 @@ export const Projects = () => {
 
     const slideData = [
         {
-            title: "Responsive Static Page",
+            title: "ChatMe Mobile App",
+            demoLink: '/chat_me.apk',
+            logo: '/chatMe.png',
+            type:"mobile"
+        },
+        {
+            title: "Food Order Mobile App",
+            demoLink: '/food_order.apk',
+            logo: '/food_order.png',
+            type:"mobile"
+        },
+        {
+            title: "Invest vacation site",
             demoLink: 'https://famous-choux-726e9f.netlify.app',
             logo: '/xacro.png'
+        },
+        {
+            title: "Security Service site",
+            demoLink: 'https://security-website-eosin.vercel.app',
+            logo: '/security.png'
         },
         {
             title: "React Crud Operation",
@@ -24,6 +41,16 @@ export const Projects = () => {
             title: "NextJs Ecommerce App",
             demoLink: 'https://sunny-rolypoly-d57275.netlify.app',
             logo: '/e_commus.png'
+        },
+        {
+            title: "Library App",
+            demoLink: 'https://library-site-orcin.vercel.app',
+            logo: '/library.png'
+        },
+        {
+            title: "Daily Boost CSS App",
+            demoLink: 'https://daily-boost-skillsapp.vercel.app',
+            logo: '/dailyBoost.png'
         },
 
     ]
