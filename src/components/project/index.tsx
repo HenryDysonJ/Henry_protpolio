@@ -6,13 +6,13 @@ export const Projects = () => {
     const slideData = [
         {
             title: "ChatMe Mobile App",
-            demoLink: '/chat_me.apk',
+            demoLink: '',
             logo: '/chatMe.png',
             type:"mobile"
         },
         {
             title: "Food Order Mobile App",
-            demoLink: '/food_order.apk',
+            demoLink: '',
             logo: '/food_order.png',
             type:"mobile"
         },
