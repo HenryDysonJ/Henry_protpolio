@@ -5,6 +5,11 @@ export const Projects = () => {
 
     const slideData = [
         {
+            title: "Portfolio",
+            demoLink: 'https://henry-protpolio.vercel.app',
+            logo: '/henry.png'
+        },
+        {
             title: "ChatMe Mobile App",
             demoLink: '',
             logo: '/chatMe.png',
